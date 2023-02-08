@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Gautam",
+      "email": "gb949308@gmail.com",
+      "phone": "9725986603",
+      "address": "Amreli"
+    },
+    {
+      "id": 0.015338155890279426,
+      "name": "Raj",
+      "email": "raj@gmail.com",
+      "phone": "123456789",
+      "address": "Navsari"
+    },
+    {
+      "id": 2,
+      "name": "Bhargesh",
+      "email": "bargesh@gmail.com",
+      "phone": "9876548523",
+      "address": "Amreli"
+    },
+    {
+      "id": 3,
+      "name": "Meet",
+      "email": "meet@gmail.com",
+      "phone": "85789658",
+      "address": "surat"
+    }
+  ]
+}
