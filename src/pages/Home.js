@@ -44,11 +44,6 @@ const Home = () => {
           })}
         </table>
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
       </div>
       <div className="main_form_div">
         <AddUserForm />
