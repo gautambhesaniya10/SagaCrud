@@ -1,19 +1,32 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
-
-td, th {
+th{
+  text-align: left !important;
+  padding: 8px;
   border: 1px solid #dddddd;
-  /* text-align: left; */
+}
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+
+.form-control{
+  width: 30% !important;
+}
+
+.main_form_div{
+  margin-left: 35%;
 }

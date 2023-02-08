@@ -30,7 +30,7 @@ const AddUserForm = () => {
     if (validationForm()) {
       const data = {
         id: Math.random(),
-        ...inputValue
+        ...inputValue,
       };
       dispatch(onLoadAddUserStart(data));
       setInputValue({
@@ -52,50 +52,68 @@ const AddUserForm = () => {
 
   return (
     <>
-      <div>
-        <label>Name :</label>
-        <input
-          type="text"
-          name="name"
-          value={inputValue?.name}
-          onChange={(e) => onChangeHandler(e)}
-          placeholder="Enter name"
-        />
-        <br />
-        <br />
-        <label>Email :</label>
-        <input
-          type="email"
-          name="email"
-          value={inputValue?.email}
-          onChange={(e) => onChangeHandler(e)}
-          placeholder="Enter Email"
-        />
-        <br />
-        <br />
-        <label>Phone No. :</label>
-        <input
-          type="number"
-          name="phone"
-          value={inputValue?.phone}
-          onChange={(e) => onChangeHandler(e)}
-          placeholder="Enter phone"
-        />
-        <br />
-        <br />
-        <label>Address :</label>
-        <input
-          type="text"
-          name="address"
-          value={inputValue?.address}
-          onChange={(e) => onChangeHandler(e)}
-          placeholder="Enter address"
-        />
-        <br />
-        <br />
-        <button type="submit" onClick={() => SubmitHandler()}>
-          Submit
-        </button>
+      <div className="mb-6">
+        <div className="mb-3">
+          <label for="Name" className="form-label">
+            Name
+          </label>
+          <input
+            type="text"
+            name="name"
+            value={inputValue?.name}
+            onChange={(e) => onChangeHandler(e)}
+            placeholder="Enter name"
+            className="form-control"
+            id="Name"
+          />
+        </div>
+        <div className="mb-3">
+          <label for="exampleInputEmail1" className="form-label">
+            Email
+          </label>
+          <input
+            type="email"
+            name="email"
+            value={inputValue?.email}
+            onChange={(e) => onChangeHandler(e)}
+            placeholder="Enter Email"
+            className="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+        </div>
+
+        <div className="mb-3">
+          <label for="Name" className="form-label">
+            Mobile No
+          </label>
+          <input
+            type="number"
+            name="phone"
+            value={inputValue?.phone}
+            onChange={(e) => onChangeHandler(e)}
+            placeholder="Enter phone"
+            className="form-control"
+            id="Name"
+          />
+        </div>
+
+        <div className="mb-3">
+          <label for="Name" className="form-label">
+          Address
+          </label>
+          <input
+            type="text"
+            name="address"
+            value={inputValue?.address}
+            onChange={(e) => onChangeHandler(e)}
+            placeholder="Enter address"
+            className="form-control"
+            id="Name"
+          />
+        </div>
+
+        <button onClick={() => SubmitHandler()} className="btn btn-primary">Submit</button>
       </div>
     </>
   );

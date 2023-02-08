@@ -18,7 +18,7 @@ const Home = () => {
 
   return (
     <>
-      <div style={{ margin: "10% 5% 0 5%" }} className="">
+      <div style={{ margin: "2% 5% 0 5%" }} className="">
         <table>
           <tr>
             <th>Name</th>
@@ -49,6 +49,8 @@ const Home = () => {
         <br />
         <br />
         <br />
+      </div>
+      <div className="main_form_div">
         <AddUserForm />
       </div>
     </>
